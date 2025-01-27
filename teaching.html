@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--====>> Favicon icon CSS <<====-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" href="favicon.png" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -101,6 +102,7 @@
       </header>
     </div>
     <!-- End header -->
+   
     <!-- Begin page-name -->
     <section class="page-name v-separator  ">
       <div class="banner">
@@ -129,6 +131,7 @@
       
     </section>
     <!-- End page-name -->
+     
     <main>
       <!-- Begin engineers-section -->
       <section
@@ -199,7 +202,7 @@
       <!-- Begin instagram block-->
       
       <!-- End instagram block-->
-
+      
       <section class="dark-section testimonial-section v-separator pt-xs-40 pt-md-50 pt-lg-100 pb-xs-40 pb-md-50 pb-lg-100">
 				<img src="img/quote.png" class="quote-img" alt="img">
 				<div class="container">
@@ -270,6 +273,7 @@
 							    </defs>
 							</svg>
 						</div>
+           
 					</div>
 				</div>
 				<!-- <button class="slick-prev slick-arrow" id="testimonial-prev" aria-label="Previous" type="button" style=""><svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5312 40.5L0.53125 20.5L20.5312 0.5L21.4688 1.4375L2.44531 20.5L21.4688 39.5625L20.5312 40.5Z" fill="#3D3B42"></path></svg></button>
@@ -278,6 +282,7 @@
 				"nextArrow": "$(&apos;#testimonial-next&apos;)", -->
 			</section>
     <!-- Begin footer -->
+    
     <footer
       class="pt-xs-50 pt-md-60 pt-lg-95 pb-xs-50 pb-md-60 pb-lg-95 lazy"
       data-src="img/footer_bg.jpg"
@@ -500,14 +505,28 @@
     <!-- Data picker -->
     <script src="vendor/bootstrap-datetimepicker/moment.js"></script>
     <script src="vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-
+    
     <!-- Masonry JS -->
     <script src="js/masonry.pkgd.min.js"></script>
 
     <!-- Images loader -->
     <script src="js/imagesloaded.min.js"></script>
     <script src="vendor/shuffle/isotope.js"></script>
-
+    <script>
+      function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+    </script>
     <!-- Form validator -->
     <script src="vendor/form-validation/jquery.form.js"></script>
     <script src="vendor/form-validation/jquery.validate.min.js"></script>
