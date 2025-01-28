@@ -10733,7 +10733,7 @@ input[type=submit].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
     border-radius: .25rem
 }
 
@@ -18723,7 +18723,7 @@ table tfoot td:last-child {
 }
 
 .logo img {
-   
+    padding: 1rem;
     margin-right: 10px
 }
 .logo-text img{
@@ -20362,7 +20362,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 15px 0
+    /* padding: 15px 0 */
 }
 
 .header-wrap header .header-right {

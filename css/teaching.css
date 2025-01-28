@@ -130,3 +130,15 @@ body {
   background-color: #212121;
   padding: 0 5px;
 }
+
+
+@media (max-width: 991px) {
+  .teaching-features{
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 576px){
+  .test-container{
+    height: 50%;
+  }
+}
