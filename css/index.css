@@ -5955,7 +5955,7 @@ img {
 }
 
 svg {
-    overflow: hidden;
+    overflow: visible;
     vertical-align: middle
 }
 
@@ -18035,7 +18035,7 @@ body h1 {
 }
 
 body h2 {
-    font-size: 48px
+    font-size: 35px
 }
 
 @media (max-width: 1199px) {
@@ -18383,6 +18383,7 @@ body .dark-section {
 }
 
 body .ovh {
+    height: 50rem;
     overflow: hidden
 }
 
@@ -20686,6 +20687,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 footer {
+    opacity: 90%;
     background-size: cover;
     background-position: center;
     background-color: var(--main_dark)
@@ -20696,7 +20698,7 @@ footer .footer-bottom {
 }
 
 footer .footer-bottom p {
-    color: var(--text_gray)
+    color: lightslategrey
 }
 
 footer .footer-bottom a {
@@ -20705,7 +20707,7 @@ footer .footer-bottom a {
 }
 
 footer .footer-bottom a:hover {
-    color: #fff
+    color: lightslategrey
 }
 
 @media (max-width: 991px) {
@@ -20756,11 +20758,11 @@ footer .footer-bottom a:hover {
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
-    color: #fff
+    color: black
 }
 
 .footer-nav ul li a:hover {
-    color: var(--main_color)
+    color: white
 }
 
 .contact-list {
@@ -20795,14 +20797,14 @@ footer .footer-bottom a:hover {
 }
 
 .contact-list .contact-list_text h5 {
-    color: #fff
+    color: black
 }
 
 .contact-list .contact-list_text a,
 .contact-list .contact-list_text p {
     display: block;
     margin-bottom: 0;
-    color: var(--text_gray)
+    color: black
 }
 
 .contact-list .contact-list_text a:hover {
@@ -20937,7 +20939,7 @@ footer .footer-bottom a:hover {
     top: 50%;
     left: 50%;
     min-height: 100%;
-    max-width: none;
+    max-width: 100%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
@@ -22031,7 +22033,7 @@ body.mfp-is-open .awp-player-popup {
 }
 
 .text-section .fluid-text-img {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     max-width: 50%
@@ -22085,7 +22087,7 @@ body.mfp-is-open .awp-player-popup {
 
     .text-section .fluid-text-img {
         position: relative;
-        left: 50%;
+        left: 0%;
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         max-width: 400px
@@ -23680,7 +23682,7 @@ body.mfp-is-open .awp-player-popup {
     position: relative;
     padding-left: 7px;
     padding-right: 7px;
-    margin-top: 14px
+    margin-top: 14px;
 }
 
 .tile-price-card img {
@@ -23941,6 +23943,7 @@ body.mfp-is-open .awp-player-popup {
 
 .tile-list .tile-list__item .tile-list-img {
     width: 50%;
+    height: 50rem ;
     background-size: cover;
     background-position: center center
 }
