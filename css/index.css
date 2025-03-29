@@ -23678,7 +23678,7 @@ body.mfp-is-open .awp-player-popup {
     margin-right: 7px
 }
 
-.tile-price-card {
+/* .tile-price-card {
     position: relative;
     padding-left: 7px;
     padding-right: 7px;
@@ -23704,8 +23704,9 @@ body.mfp-is-open .awp-player-popup {
 }
 
 .tile-price-card .text h2 {
+    text-align: center;
     margin-bottom: 5px
-}
+} */
 
 .tile-price-card .text p {
     margin-bottom: 0;

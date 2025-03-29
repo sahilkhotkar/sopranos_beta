@@ -341,34 +341,36 @@
             Advanced <span class="discount">10% off</span> <span class="arrow">▼</span>
           </button>
         </div>
-    
+
         <!-- Right Side: Course Details -->
         <div class="course-details">
           <h2 id="course-title">Preparatory Course</h2>
           <p id="course-description">
-            Having a Swara sense is the primary requirement when you learn Hindustani music. We cover basic vocal exercises
+            Having a Swara sense is the primary requirement when you learn Hindustani music. We cover basic vocal
+            exercises
             and introductory songs/Bhajans.
           </p>
-    
+
           <p class="price">
             <span id="course-price">₹9600</span>
             <span class="old-price" id="old-price"></span>
             <span id="course-classes">12 classes</span>
           </p>
-    
+
           <div class="buttons">
             <button class="book-btn">Book Your Free Class</button>
             <button class="buy-btn">Buy Now</button>
           </div>
-    
+
           <h3>What will you learn?</h3>
           <ul id="course-learn">
             <li><i class="fas fa-check-circle"></i> A basic appreciation of Hindustani Classical music.</li>
-            <li><i class="fas fa-check-circle"></i> Be in an easy position to cope with the demands of the first session of
+            <li><i class="fas fa-check-circle"></i> Be in an easy position to cope with the demands of the first session
+              of
               the Intermediate Course.</li>
             <li><i class="fas fa-check-circle"></i> Acquired command over Sur and Taal.</li>
           </ul>
-    
+
           <div class="info">
             <span><i class="fas fa-user"></i> 1 on 1 Personal Teacher</span>
             <span><i class="fas fa-clock"></i> 60 Mins Classes</span>
@@ -376,7 +378,7 @@
           </div>
         </div>
       </div>
-    
+
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           const courses = [
@@ -418,7 +420,7 @@
               ],
             },
           ];
-    
+
           const buttons = document.querySelectorAll(".accordion-btn");
           const titleElement = document.getElementById("course-title");
           const descElement = document.getElementById("course-description");
@@ -426,22 +428,22 @@
           const oldPriceElement = document.getElementById("old-price");
           const classesElement = document.getElementById("course-classes");
           const learnList = document.getElementById("course-learn");
-    
+
           buttons.forEach((button, index) => {
             button.addEventListener("click", () => {
               // Remove active class from all buttons
               buttons.forEach(btn => btn.classList.remove("active"));
-    
+
               // Add active class to clicked button
               button.classList.add("active");
-    
+
               // Update course details
               titleElement.innerText = courses[index].title + " Course";
               descElement.innerText = courses[index].description;
               priceElement.innerText = courses[index].price;
               oldPriceElement.innerText = courses[index].oldPrice;
               classesElement.innerText = courses[index].classes;
-    
+
               // Update learning points dynamically
               learnList.innerHTML = "";
               courses[index].learn.forEach(point => {
@@ -457,114 +459,134 @@
     </section>
 
     <!-- Begin engineers-section -->
-    
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="section-bg op-1 bg-fixed lazy" data-src="img/engineers-bg.jpg"></div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="section-bg op-1 bg-fixed lazy" data-src="img/engineers-bg.jpg"></div>
     </section>
     <!-- End engineers-section -->
     <!-- Begin instagram block-->
 
     <!-- End instagram block-->
 
-    <section class="dark-section testimonial-section v-separator pt-xs-40 pt-md-50 pt-lg-100 pb-xs-40 pb-md-50">
+    <section
+      class="dark-section testimonial-section v-separator pt-xs-40 pt-md-50 pt-lg-100 pb-xs-40 pb-md-50 pb-lg-100">
       <img src="img/quote.png" class="quote-img" alt="img">
-      <div class="container" style="
-        padding: 100px;">
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-sm-6">
             <div class="testimonials-slider white-arrow" data-slick='{
-								 	"slidesToShow": 1,
-								 	"swipeToSlide": true,
-								 	"adaptiveHeight": true,
-								 	"responsive": [
-								 		{
-								 			"breakpoint": 992,
-								 			"settings": {
-								 				"slidesToShow": 1,
-								 				"arrows": false,
-								 				"adaptiveHeight": true,
-								 				"dots": true
-								 			}
-								 		}
-								 	]
-								}'>
-              <div class="tt-slide">
+							"slidesToShow": 1,
+							"swipeToSlide": true,
+							"adaptiveHeight": true,
+							"responsive": [
+								{
+									"breakpoint": 992,
+									"settings": {
+										"slidesToShow": 1,
+										"arrows": false,
+										"adaptiveHeight": true,
+										"dots": true
+									}
+								}
+							]
+						}'>
+              <!-- Testimonial 1 -->
+              <div class="tt-slide" data-image="img/testimonials.jpg">
                 <div class="text-block white">
                   <h2>What Clients Say</h2>
-                  <p>Hello I’m Aarya Ambekar, I have recorded a very sweet song which is composed by Ashok Patki, My
-                    experience in this studio has been amazing, I love the that this studio is airy, fresh & well
-                    maintained. The recording room is excellent and I had fun recording at Sopranos Studios.</p>
+                  <p>Hello I’m Aarya Ambekar, I have recorded a very sweet song which is composed by
+                    Ashok Patki, My experience in this studio has been amazing, I love the that this
+                    studio is airy, fresh & well maintained. The recording room is excellent and I
+                    had fun recording at Sopranos Studios.</p>
                   <h5 class="theme-color mb-0">– Arya Ambekar</h5>
                 </div>
               </div>
-              <div class="tt-slide">
+              <!-- Testimonial 2 -->
+              <div class="tt-slide" data-image="img/testimonials-2.png">
                 <div class="text-block white">
                   <h2>What Clients Say</h2>
-                  <p>Namaskar I’m Milind Joshi and I’m here in Hema Upasani’s Sopranos Studio, the most important
-                    special quality of this studio that I have realised is multiple musicians can perform at the same
-                    time which is a rarity in Mumbai, this place is spacious, equipment are brilliant, it is tastefully
-                    designed. I felt very fresh, comfort and creative when I entered the studio. I can’t wait to record
-                    a song here again.</p>
+                  <p>Namaskar I’m Milind Joshi and I’m here in Hema Upasani’s Sopranos Studio, the
+                    most important special quality of this studio that I have realised is multiple
+                    musicians can perform at the same time which is a rarity in Mumbai, this place
+                    is spacious, equipment are brilliant, it is tastefully designed. I felt very
+                    fresh, comfort and creative when I entered the studio. I can’t wait to record a
+                    song here again.</p>
                   <h5 class="theme-color mb-0">– Milind Joshi</h5>
                 </div>
               </div>
-              <div class="tt-slide">
+              <!-- Testimonial 3 -->
+              <div class="tt-slide" data-image="img/testimonials-3.jpg">
                 <div class="text-block white">
                   <h2>What Clients Say</h2>
-                  <p>Hema Upasani’s Recording Studio is so spacious we can call it recording theatre, we don’t see
-                    studios of this size now-a-days, I’ve heard this studio is designed by Daman Sood and it is build
-                    really great. I’ve recorded a song here and the quality is amazing, the equipments are top notch.
-                    This has to be the greatest studio in thane. Really loved working here.</p>
+                  <p>Hema Upasani’s Recording Studio is so spacious we can call it recording theatre,
+                    we don’t see studios of this size now-a-days, I’ve heard this studio is designed
+                    by Daman Sood and it is build really great. I’ve recorded a song here and the
+                    quality is amazing, the equipments are top notch. This has to be the greatest
+                    studio in thane. Really loved working here.</p>
                   <h5 class="theme-color mb-0">– Ashok Patki</h5>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-sm-6">
-            <svg width="506" height="506" class="testimonial-svg" viewBox="0 0 506 506" fill="none"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="506" height="506">
-                <path
-                  d="M73.6543 431.394C60.6565 397.967 64.0607 361.134 73.9638 327.707C85.1048 290.256 103.983 254.971 118.218 218.758C134.93 176.973 135.858 134.26 129.359 89.6901C124.408 52.8578 127.812 12.9304 173.304 2.40692C197.443 -3.16435 223.129 1.78789 247.268 8.59721C348.156 37.0726 481.539 91.5472 503.202 199.258C527.959 321.207 383.126 439.132 278.525 486.488C205.489 519.296 106.768 516.82 73.6543 431.394Z"
-                  fill="url(#paint1_linear)" />
-                <path
-                  d="M42.7072 307.397C47.9682 304.921 52.6103 301.207 56.6334 296.873C66.5365 286.969 71.7975 274.279 77.368 261.898C83.248 248.589 95.0079 234.661 95.9363 219.185C97.1742 199.067 78.9154 189.781 62.2039 199.995C46.1113 209.59 31.8756 221.971 19.8062 236.518C8.97469 249.208 0 264.374 0 280.779C0 290.064 3.09472 299.659 10.2126 305.54C17.021 311.111 26.3051 312.349 34.6609 310.182C37.4461 309.563 40.2314 308.635 42.7072 307.397Z"
-                  fill="url(#paint1_linear)" />
-              </mask>
-              <g mask="url(#mask0)">
-                <rect opacity="0.9" width="904" height="591" transform="matrix(-1 0 0 1 654 -43)"
-                  fill="url(#pattern0)" />
-              </g>
-              <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#testimonials-1"
-                    transform="translate(0 -0.0101108) scale(0.000471698 0.000721515)" />
-                </pattern>
-                <linearGradient id="paint1_linear" x1="-17.8833" y1="330.485" x2="181.651" y2="168.313"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#FF3D71" />
-                  <stop offset="1" stop-color="#FFDD35" />
-                </linearGradient>
-                <linearGradient id="paint1_linear" x1="-17.8833" y1="330.485" x2="181.651" y2="168.313"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#FF3D71" />
-                  <stop offset="1" stop-color="#FFDD35" />
-                </linearGradient>
-                <image id="testimonials-1" width="2120" height="1414" xlink:href="img/testimonials-1.jpg" />
-              </defs>
-            </svg>
+            <!-- Image Container -->
+            <div class="testimonial-image-container">
+              <img src="img/testimonials.jpg" id="testimonial-image" class="img-fluid" alt="Client Testimonial">
+            </div>
           </div>
-
         </div>
       </div>
-      <!-- <button class="slick-prev slick-arrow" id="testimonial-prev" aria-label="Previous" type="button" style=""><svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5312 40.5L0.53125 20.5L20.5312 0.5L21.4688 1.4375L2.44531 20.5L21.4688 39.5625L20.5312 40.5Z" fill="#3D3B42"></path></svg></button>
-				<button class="slick-next slick-arrow" id="testimonial-next" aria-label="Next" type="button" style=""><svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.66875 40.5L21.6688 20.5L1.66875 0.5L0.731251 1.4375L19.7547 20.5L0.731251 39.5625L1.66875 40.5Z" fill="#3D3B42"></path></svg></button>
-				"prevArrow": "$(&apos;#testimonial-prev&apos;)",
-				"nextArrow": "$(&apos;#testimonial-next&apos;)", -->
+      <!-- Keep original arrow comments -->
+      <!-- <button class="slick-prev slick-arrow" id="testimonial-prev" aria-label="Previous" type="button" style="">
+				...
+			</button> -->
     </section>
+
+    <style>
+      .testimonial-image-container {
+        position: -ms-page;
+        margin-left: 180px;
+        height: 306px;
+        width: 300px;
+        /* Match original SVG size */
+      }
+
+      #testimonial-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 100px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-image-container {
+          padding-left: 0;
+          margin-top: 40px;
+          height: 300px;
+        }
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.querySelector('.testimonials-slider');
+        const testimonialImage = document.getElementById('testimonial-image');
+
+        // Initialize slider
+        $(slider).on('afterChange', function (event, slick, currentSlide) {
+          const activeSlide = slick.$slides.eq(currentSlide);
+          testimonialImage.src = activeSlide.data('image');
+        });
+
+        // Set initial image
+        const firstSlide = document.querySelector('.tt-slide');
+        testimonialImage.src = firstSlide.dataset.image;
+      });
+    </script>
 
     <!-- Begin booking popup -->
     <div id="bookingPopup" class="popup-wrap">
