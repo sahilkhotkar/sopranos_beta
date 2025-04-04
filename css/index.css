@@ -18113,7 +18113,7 @@ body p {
 
 body img {
     max-width: 100%;
-    display: inline-block
+    display: inline-block;
 }
 
 body a {
@@ -18371,7 +18371,7 @@ body .p--sm {
 }
 
 body .white-section {
-    background: #fff
+    background: #fff;
 }
 
 body .white-color {
@@ -18383,7 +18383,7 @@ body .dark-section {
 }
 
 body .ovh {
-    height: 50rem;
+    height: 40rem;
     overflow: hidden
 }
 
@@ -22034,7 +22034,7 @@ body.mfp-is-open .awp-player-popup {
 
 .text-section .fluid-text-img {
     position:absolute;
-    top: 0;
+    top: -200px;
     left: 0;
     max-width: 50%
 }
@@ -22204,6 +22204,7 @@ body.mfp-is-open .awp-player-popup {
 
 .parralax-section {
     position: relative
+    
 }
 
 .parralax-section>* {
@@ -23902,9 +23903,10 @@ body.mfp-is-open .awp-player-popup {
 }
 
 .tile-list .tile-list__item {
+    height: 40rem;
     display: -ms-flexbox;
     display: flex;
-    background: #fff
+    background: #fff;
 }
 
 .tile-list .tile-list__item:nth-child(odd) .tile-list-content {
@@ -23921,7 +23923,8 @@ body.mfp-is-open .awp-player-popup {
 }
 
 .tile-list .tile-list__item.tile-list__item--dark {
-    background: var(--main_dark)
+    background: var(--main_dark);
+    height: 40rem;
 }
 
 .tile-list .tile-list__item.tile-list__item--dark .tile-list-text h3 {
@@ -23944,7 +23947,7 @@ body.mfp-is-open .awp-player-popup {
 
 .tile-list .tile-list__item .tile-list-img {
     width: 50%;
-    height: 50rem ;
+    height: 40rem ;
     background-size: cover;
     background-position: center center
 }
